@@ -1,0 +1,86 @@
+.events {
+  grid-column: center-start/ center-end;
+  padding: 16rem 0;
+
+  &__title {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    color: var(--primaryColor);
+    text-align: center;
+  }
+
+  &__subtitle {
+    padding: 0 14% 3%;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+    grid-column-gap: 5rem;
+  }
+
+  .event {
+    position: relative;
+
+    &__img {
+      width: 100%;
+      min-height: 60rem;
+      object-fit: cover;
+      display: block;
+    }
+
+    &__content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 10%;
+      padding: 0 3%;
+      border: .1rem solid var(--offWhite);
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      align-content: center;
+      justify-items: center;
+    }
+
+    &__name {
+      font-size: 3rem;
+      color: var(--offWhite);
+      margin-top: 10rem;
+      text-align: center;
+      align-self: center;
+    }
+
+    &__text {
+      align-self: center;
+      font-size: 1.6rem;
+      text-align: center;
+      color: var(--offWhite);
+      margin: 0;
+    }
+
+    &__btn {
+      margin: 0 auto;
+      width: 16rem;
+      height: 5.5rem;
+      font-size: 1.6rem;
+      color: var(--mainWhite);
+      background-color: var(--primaryColor);
+      border-radius: .6rem;
+      border: .15rem solid var(--primaryColor);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+
+      &:hover {
+        background-color: var(--secondaryColor);
+      }
+    }
+
+  }
+}
