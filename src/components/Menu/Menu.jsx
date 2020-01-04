@@ -8,56 +8,56 @@ const getImages = graphql`
     starter: file(relativePath: { eq: "home-menu/starter.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
     duck: file(relativePath: { eq: "home-menu/duck.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
     salad: file(relativePath: { eq: "home-menu/salad.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
     drinks: file(relativePath: { eq: "home-menu/drinks.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
     burger: file(relativePath: { eq: "home-menu/burger.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
     bites: file(relativePath: { eq: "home-menu/bites.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
     pizza: file(relativePath: { eq: "home-menu/pizza.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
     sweets: file(relativePath: { eq: "home-menu/sweets.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }

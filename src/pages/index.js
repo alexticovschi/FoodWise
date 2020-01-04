@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
 import Menu from "../components/Menu/Menu"
-import Banner from "../components/Banner/Banner"
-import SmallBanner from "../components/SmallBanner/SmallBanner"
+import HeroBanner from "../components/HeroBanner/HeroBanner"
+import SmallBanner from "../components/Banner/Banner"
 import Events from "../components/Events/Events"
 import Hero from "../components/Hero/Hero"
 import { graphql } from "gatsby"
@@ -27,13 +27,13 @@ const IndexPage = ({ data }) => (
         opacity="true"
         img={data.homeHeroImage.childImageSharp.fluid}
       >
-        <Banner
-          className="banner"
+        <HeroBanner
+          className="hero-banner"
           title="Take your daily food everywhere!"
           subtitle="Creative Ideas * Professional Staff * Sensational Food."
         >
           <button className="hero-btn">Call Us Now</button>
-        </Banner>
+        </HeroBanner>
       </Hero>
       <Menu />
       <SmallBanner />
