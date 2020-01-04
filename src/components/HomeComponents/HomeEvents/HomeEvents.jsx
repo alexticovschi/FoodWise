@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Image from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import "./HomeEvents.scss"
@@ -54,7 +55,9 @@ const HomeEvents = () => {
               staff parties and teaching. we understand that each brand is
               different, and that details are key.
             </p>
-            <button className="event__btn">Find More</button>
+            <Link to="/events/corporate">
+              <button className="event__btn">Find More</button>
+            </Link>
           </div>
         </figure>
         <figure className="event">
@@ -70,7 +73,9 @@ const HomeEvents = () => {
               through to menu design, personal consultations, logistics and the
               all-important food tasting.
             </p>
-            <button className="event__btn">Find More</button>
+            <Link to="/events/weddings">
+              <button className="event__btn">Find More</button>
+            </Link>
           </div>
         </figure>
         <figure className="event">
@@ -86,7 +91,9 @@ const HomeEvents = () => {
               birthday party, retirement celebration, christening, or an
               intimate dinner with your closest friends.
             </p>
-            <button className="event__btn">Find More</button>
+            <Link to="/events/special">
+              <button className="event__btn">Find More</button>
+            </Link>
           </div>
         </figure>
       </figure>
