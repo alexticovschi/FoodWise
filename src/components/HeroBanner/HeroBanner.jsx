@@ -1,8 +1,8 @@
 import React from "react"
 
-import "./Banner.scss"
+import "./HeroBanner.scss"
 
-const Banner = ({ title, subtitle, children }) => {
+const HeroBanner = ({ title, subtitle, children }) => {
   return (
     <div className="banner">
       <h1 className="banner__title">{title}</h1>
@@ -12,4 +12,4 @@ const Banner = ({ title, subtitle, children }) => {
   )
 }
 
-export default Banner
+export default HeroBanner
