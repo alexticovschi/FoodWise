@@ -7,21 +7,21 @@ const getMenuImages = graphql`
   query menuImages {
     corporate: file(relativePath: { eq: "home-events/corporate.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     wedding: file(relativePath: { eq: "home-events/wedding.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     special: file(relativePath: { eq: "home-events/special.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -50,7 +50,9 @@ const Events = () => {
           <div className="event__content">
             <h2 className="event__name">Corporate Events</h2>
             <p className="event__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing.
+              From product launches and conference catering through to corporate
+              staff parties and teaching. we understand that each brand is
+              different, and that details are key.
             </p>
             <button className="event__btn">Find More</button>
           </div>
@@ -64,7 +66,9 @@ const Events = () => {
           <div className="event__content">
             <h2 className="event__name">Weddings, Festive Dinners</h2>
             <p className="event__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing.
+              Our wedding service is fully loaded, from your initial brief,
+              through to menu design, personal consultations, logistics and the
+              all-important food tasting.
             </p>
             <button className="event__btn">Find More</button>
           </div>
@@ -78,7 +82,9 @@ const Events = () => {
           <div className="event__content">
             <h2 className="event__name">Special Events</h2>
             <p className="event__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing.
+              We offer a range of special catering options, whether it’s a
+              birthday party, retirement celebration, christening, or an
+              intimate dinner with your closest friends.
             </p>
             <button className="event__btn">Find More</button>
           </div>

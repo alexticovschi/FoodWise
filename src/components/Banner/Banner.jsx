@@ -4,19 +4,18 @@ import Image from "gatsby-image"
 
 import "./Banner.scss"
 
-const getImage = graphql`
-  query banner {
-    banner: file(relativePath: { eq: "tasty-deserts.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+const Banner = () => {
+  const getImage = graphql`
+    query banner {
+      banner: file(relativePath: { eq: "tasty-deserts.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 900) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
-  }
-`
-
-const Banner = () => {
+  `
   const { banner } = useStaticQuery(getImage)
   return (
     <div className="banner">
