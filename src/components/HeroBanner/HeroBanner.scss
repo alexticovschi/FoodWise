@@ -1,4 +1,4 @@
-.banner {
+.hero-banner {
   text-align: center;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
@@ -6,9 +6,7 @@
   &__title {
     font-weight: 700;
     margin-bottom: 3rem;
-    // padding: 0 1rem;
     letter-spacing: 6px;
-    // font-size: 3.5rem;
     color: var(--primaryColor);
   }
 
@@ -25,14 +23,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  .banner {
+  .hero-banner {
     width: 73%;
 
-    h1 {
+    &__title {
       font-size: 8rem;
     }
 
-    p {
+    &__subtitle {
       width: 70%;
     }
   }
