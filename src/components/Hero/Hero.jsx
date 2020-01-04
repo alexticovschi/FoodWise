@@ -13,7 +13,7 @@ const Hero = ({ img, className, children, home }) => {
 
 export default styled(Hero)`
   grid-column: full-start/ full-end;
-  min-height: ${props => (props.home ? "calc(100vh - 8vh)" : "70vh")};
+  min-height: ${props => (props.home ? "calc(100vh - 8vh)" : "60vh")};
   background: ${props => (props.opacity ? "rgba(20, 20, 20, 0.6)" : "none")};
   background-position: center;
   background-size: cover;
