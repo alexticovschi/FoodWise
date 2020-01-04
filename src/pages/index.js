@@ -1,16 +1,42 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
-import Hero from "../components/Hero/Hero"
 import Menu from "../components/Menu/Menu"
 import Banner from "../components/Banner/Banner"
+import SmallBanner from "../components/SmallBanner/SmallBanner"
 import Events from "../components/Events/Events"
+import Hero from "../components/Hero/Hero"
+import { graphql } from "gatsby"
 
-const IndexPage = () => (
+export const query = graphql`
+  query {
+    homeHeroImage: file(relativePath: { eq: "hero.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4140) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+const IndexPage = ({ data }) => (
   <main className="container">
     <Layout>
-      <Hero />
+      <Hero
+        home="true"
+        opacity="true"
+        img={data.homeHeroImage.childImageSharp.fluid}
+      >
+        <Banner
+          className="banner"
+          title="Take your daily food everywhere!"
+          subtitle="Creative Ideas * Professional Staff * Sensational Food."
+        >
+          <button className="hero-btn">Call Us Now</button>
+        </Banner>
+      </Hero>
       <Menu />
-      <Banner />
+      <SmallBanner />
       <Events />
     </Layout>
   </main>

@@ -1,24 +1,24 @@
 import React from "react"
-
+import styled from "styled-components"
+import BackgroundImage from "gatsby-background-image"
 import "./Hero.scss"
-import hero from "../../images/hero.jpg"
 
-const Hero = () => {
+const Hero = ({ img, className, children, home }) => {
   return (
-    <div className="bg">
-      <img className="hero-img" src={hero} alt="" />
-      <section className="hero" id="home">
-        <div className="hero__content">
-          <h1 className="hero__name">Take your daily food everywhere!</h1>
-          <p className="hero__subtitle">
-            Creative Ideas * Professional Staff * Sensational Food.
-          </p>
-
-          <button className="hero__btn">Call Us Now</button>
-        </div>
-      </section>
-    </div>
+    <BackgroundImage className={className} fluid={img} home={home}>
+      {children}
+    </BackgroundImage>
   )
 }
 
-export default Hero
+export default styled(Hero)`
+  grid-column: full-start/ full-end;
+  min-height: ${props => (props.home ? "calc(100vh - 8vh)" : "70vh")};
+  background: ${props => (props.opacity ? "rgba(20, 20, 20, 0.6)" : "none")};
+  background-position: center;
+  background-size: cover;
+  opacity: 1 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
