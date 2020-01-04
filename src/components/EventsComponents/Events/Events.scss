@@ -1,0 +1,49 @@
+.events {
+  grid-column: center-start/ center-end;
+  margin: 10rem 0;
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10rem;
+  }
+
+  &__text,
+  &__title,
+  &__subtitle {
+    grid-column: 1 / span 2;
+  }
+
+  &__title,
+  &__subtitle {
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    grid-column: 3;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.event-btn {
+  margin: 2rem 0;
+  width: 18rem;
+  height: 5rem;
+  font-size: 1.6rem;
+  color: var(--mainWhite);
+  background-color: var(--primaryColor);
+  border-radius: .6rem;
+  border: .15rem solid var(--primaryColor);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background-color: var(--secondaryColor);
+  }
+}

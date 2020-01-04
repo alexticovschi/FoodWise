@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout/Layout"
 import HeroBanner from "../components/HeroBanner/HeroBanner"
 import Hero from "../components/Hero/Hero"
+import Events from "../components/EventsComponents/Events/Events"
 import { graphql } from "gatsby"
 
 export const query = graphql`
@@ -16,7 +17,7 @@ export const query = graphql`
   }
 `
 
-const Events = ({ data }) => (
+const EventsPage = ({ data }) => (
   <main className="events-container">
     <Layout>
       <Hero opacity="true" img={data.eventsHeroImage.childImageSharp.fluid}>
@@ -26,8 +27,9 @@ const Events = ({ data }) => (
           subtitle="Any Event. Any Industry. Any Location"
         ></HeroBanner>
       </Hero>
+      <Events />
     </Layout>
   </main>
 )
 
-export default Events
+export default EventsPage

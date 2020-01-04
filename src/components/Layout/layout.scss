@@ -72,7 +72,7 @@ p {
   margin-bottom: 1.25rem;
   font-family: 'Playfair Display', serif;
   color: var(--darkGrey);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 25px;
 }
 
@@ -87,5 +87,5 @@ p {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
       [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: auto auto 9vh;
+  grid-template-rows: auto auto min-content min-content 9vh;
 }
