@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
-import Menu from "../components/Menu/Menu"
+import Menu from "../components/HomeComponents/Menu/Menu"
 import HeroBanner from "../components/HeroBanner/HeroBanner"
-import Banner from "../components/Banner/Banner"
-import Events from "../components/Events/Events"
+import Banner from "../components/HomeComponents/Banner/Banner"
+import HomeEvents from "../components/HomeComponents/HomeEvents/HomeEvents"
 import Hero from "../components/Hero/Hero"
 import { graphql } from "gatsby"
 
@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => (
       </Hero>
       <Menu />
       <Banner />
-      <Events />
+      <HomeEvents />
     </Layout>
   </main>
 )

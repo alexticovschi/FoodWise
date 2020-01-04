@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-import "./Events.scss"
+import "./HomeEvents.scss"
 
 const getMenuImages = graphql`
   query menuImages {
@@ -29,18 +29,18 @@ const getMenuImages = graphql`
   }
 `
 
-const Events = () => {
+const HomeEvents = () => {
   const { corporate, wedding, special } = useStaticQuery(getMenuImages)
   return (
-    <section className="events">
-      <h1 className="events__title">Events</h1>
-      <p className="events__subtitle">
+    <section className="home-events">
+      <h1 className="home-events__title">Events</h1>
+      <p className="home-events__subtitle">
         Regardless of the event, whether catering for a corporate, private or
         wedding party, we embrace the opportunity to customize basic menus to
         meet the culinary preferences of customers and budget requirements.
       </p>
 
-      <figure className="events__list">
+      <figure className="home-events__list">
         <figure className="event">
           <Image
             fluid={corporate.childImageSharp.fluid}
@@ -93,4 +93,4 @@ const Events = () => {
     </section>
   )
 }
-export default Events
+export default HomeEvents
