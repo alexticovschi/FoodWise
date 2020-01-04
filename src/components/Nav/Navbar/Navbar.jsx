@@ -12,6 +12,11 @@ const Navbar = ({ isOpen, drawerClickHandler }) => {
       <nav className="nav">
         <ul className="nav__links">
           <li>
+            <Link to="/" className="nav__link">
+              Home
+            </Link>
+          </li>
+          <li>
             <Link to="/about" className="nav__link">
               About
             </Link>

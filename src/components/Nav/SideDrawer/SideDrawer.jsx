@@ -7,6 +7,11 @@ const SideDrawer = ({ show, click }) => {
     <nav className={show ? "side-drawer open" : "side-drawer"}>
       <ul className="side-drawer__links">
         <li>
+          <Link to="/" className="side-drawer__link">
+            Home
+          </Link>
+        </li>
+        <li>
           <Link to="/about" className="side-drawer__link">
             About
           </Link>
