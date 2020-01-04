@@ -1,11 +1,36 @@
 import React from "react"
+import Image from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 import "./Events.scss"
 
-import corporate from "../../images/home-events/corporate.jpg"
-import wedding from "../../images/home-events/wedding.jpg"
-import special from "../../images/home-events/special.jpg"
+const getMenuImages = graphql`
+  query menuImages {
+    corporate: file(relativePath: { eq: "home-events/corporate.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    wedding: file(relativePath: { eq: "home-events/wedding.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    special: file(relativePath: { eq: "home-events/special.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 const Events = () => {
+  const { corporate, wedding, special } = useStaticQuery(getMenuImages)
   return (
     <section className="events">
       <h1 className="events__title">Events</h1>
@@ -17,7 +42,11 @@ const Events = () => {
 
       <figure className="events__list">
         <figure className="event">
-          <img className="event__img" src={corporate} alt="" />
+          <Image
+            fluid={corporate.childImageSharp.fluid}
+            className="event__img"
+            alt="event"
+          />
           <div className="event__content">
             <h2 className="event__name">Corporate Events</h2>
             <p className="event__text">
@@ -27,7 +56,11 @@ const Events = () => {
           </div>
         </figure>
         <figure className="event">
-          <img className="event__img" src={wedding} alt="" />
+          <Image
+            fluid={wedding.childImageSharp.fluid}
+            className="event__img"
+            alt="event"
+          />
           <div className="event__content">
             <h2 className="event__name">Weddings, Festive Dinners</h2>
             <p className="event__text">
@@ -37,7 +70,11 @@ const Events = () => {
           </div>
         </figure>
         <figure className="event">
-          <img className="event__img" src={special} alt="" />
+          <Image
+            fluid={special.childImageSharp.fluid}
+            className="event__img"
+            alt="event"
+          />
           <div className="event__content">
             <h2 className="event__name">Special Events</h2>
             <p className="event__text">
