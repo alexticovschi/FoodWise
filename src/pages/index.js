@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout/Layout"
 import Menu from "../components/Menu/Menu"
 import HeroBanner from "../components/HeroBanner/HeroBanner"
-import SmallBanner from "../components/Banner/Banner"
+import Banner from "../components/Banner/Banner"
 import Events from "../components/Events/Events"
 import Hero from "../components/Hero/Hero"
 import { graphql } from "gatsby"
@@ -20,7 +20,7 @@ export const query = graphql`
 `
 
 const IndexPage = ({ data }) => (
-  <main className="container">
+  <main className="home-container">
     <Layout>
       <Hero
         home="true"
@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => (
         </HeroBanner>
       </Hero>
       <Menu />
-      <SmallBanner />
+      <Banner />
       <Events />
     </Layout>
   </main>

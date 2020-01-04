@@ -6,7 +6,9 @@ import "./navbar.scss"
 const Navbar = ({ isOpen, drawerClickHandler }) => {
   return (
     <header>
-      <h1 className="logo">FoodWise</h1>
+      <Link to="/">
+        <h1 className="logo">FoodWise</h1>
+      </Link>
       <nav className="nav">
         <ul className="nav__links">
           <li>
@@ -15,8 +17,8 @@ const Navbar = ({ isOpen, drawerClickHandler }) => {
             </Link>
           </li>
           <li>
-            <Link to="/menu" className="nav__link">
-              Menu
+            <Link to="/events" className="nav__link">
+              Events
             </Link>
           </li>
           <li>

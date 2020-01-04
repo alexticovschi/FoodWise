@@ -12,8 +12,8 @@ const SideDrawer = ({ show, click }) => {
           </Link>
         </li>
         <li>
-          <Link to="/menu" className="side-drawer__link">
-            Menu
+          <Link to="/events" className="side-drawer__link">
+            Events
           </Link>
         </li>
         <li>
