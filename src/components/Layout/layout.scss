@@ -62,7 +62,7 @@ h5,
 h6 {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
   font-size: 3rem;
   letter-spacing: var(--mainSpacing);
   color: var(--darkGrey);
@@ -88,4 +88,11 @@ p {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
       [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: auto auto min-content min-content 9vh;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
+      [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: auto auto min-content 9vh;
 }
