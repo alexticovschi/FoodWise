@@ -29,7 +29,7 @@ const CorporateEvents = ({ data }) => {
           <HeroBanner
             className="hero-banner"
             title="Corporate Events"
-            subtitle="Looking for a corporate caterer in Washington, DC? FoodWise is the go-to choice for Londons’s top businesses and organizations."
+            subtitle="Looking for a corporate caterer in London, UK? FoodWise is the go-to choice for Londons’s top businesses and organizations."
           ></HeroBanner>
         </Hero>
         <Intro />
