@@ -1,0 +1,32 @@
+.trusted {
+  grid-column: center-start/ center-end;
+  margin-bottom: 8rem;
+
+  display: grid;
+  align-content: center;
+  justify-items: center;
+
+  &__text {
+    padding: 0 20%;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  &__btn {
+    margin: 2rem 0;
+    width: auto;
+    padding: 1.8rem 2rem;
+    font-size: 1.6rem;
+    color: var(--mainWhite);
+    background-color: var(--primaryColor);
+    border-radius: .6rem;
+    border: .15rem solid var(--primaryColor);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      background-color: var(--secondaryColor);
+    }
+  }
+}

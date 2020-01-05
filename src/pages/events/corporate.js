@@ -2,6 +2,9 @@ import React from "react"
 import Layout from "../../components/Layout/Layout"
 import HeroBanner from "../../components/HeroBanner/HeroBanner"
 import Hero from "../../components/Hero/Hero"
+import Intro from "../../components/EventsComponents/Corporate/Intro/Intro"
+import SmallGallery from "../../components/EventsComponents/Corporate/SmallGallery/SmallGallery"
+import TrustedPartner from "../../components/EventsComponents/Corporate/TrustedPartner/TrustedPartner"
 import { graphql } from "gatsby"
 
 export const query = graphql`
@@ -29,6 +32,9 @@ const CorporateEvents = ({ data }) => {
             subtitle="Looking for a corporate caterer in Washington, DC? FoodWise is the go-to choice for Londons’s top businesses and organizations."
           ></HeroBanner>
         </Hero>
+        <Intro />
+        <SmallGallery />
+        <TrustedPartner />
       </Layout>
     </main>
   )
