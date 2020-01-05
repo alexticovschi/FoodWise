@@ -5,7 +5,7 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 40rem);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 5rem;
   }
 
