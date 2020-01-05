@@ -1,0 +1,20 @@
+.stories {
+  grid-column: center-start/ center-end;
+  margin-bottom: 10rem;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    padding: 0 20%;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5rem;
+  }
+}

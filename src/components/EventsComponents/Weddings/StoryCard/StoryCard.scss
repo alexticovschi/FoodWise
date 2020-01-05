@@ -1,0 +1,36 @@
+.story-card {
+
+  &__info {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+  }
+
+  &__name,
+  &__text {
+    margin: 2rem 0;
+    text-align:center
+  }
+
+  &__name {
+    font-size: 1.7rem;
+  }
+
+  &__btn {
+    margin: 2rem 0;
+    width: auto;
+    padding: 1.4rem 2.6rem;
+    font-size: 1.6rem;
+    color: var(--mainWhite);
+    background-color: var(--primaryColor);
+    border-radius: .6rem;
+    border: .15rem solid var(--primaryColor);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      background-color: var(--secondaryColor);
+    }
+  }
+}
