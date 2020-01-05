@@ -3,6 +3,7 @@ import Layout from "../../components/Layout/Layout"
 import HeroBanner from "../../components/HeroBanner/HeroBanner"
 import Hero from "../../components/Hero/Hero"
 import BigDay from "../../components/EventsComponents/Weddings/BigDay/BigDay"
+import SmallGallery from "../../components/EventsComponents/Weddings/SmallGallery/SmallGallery"
 import { graphql } from "gatsby"
 
 export const query = graphql`
@@ -28,6 +29,7 @@ const WeddingEvents = ({ data }) => {
           ></HeroBanner>
         </Hero>
         <BigDay />
+        <SmallGallery />
       </Layout>
     </main>
   )
