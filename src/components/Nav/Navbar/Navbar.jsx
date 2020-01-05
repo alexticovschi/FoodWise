@@ -27,8 +27,8 @@ const Navbar = ({ isOpen, drawerClickHandler }) => {
             </Link>
           </li>
           <li>
-            <Link to="/reservation" className="nav__link">
-              Reservation
+            <Link to="/gallery" className="nav__link">
+              Gallery
             </Link>
           </li>
 

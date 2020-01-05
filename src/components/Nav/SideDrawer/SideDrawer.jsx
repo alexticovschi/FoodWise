@@ -22,8 +22,8 @@ const SideDrawer = ({ show, click }) => {
           </Link>
         </li>
         <li>
-          <Link to="/reservation" className="side-drawer__link">
-            Reservation
+          <Link to="/Gallery" className="side-drawer__link">
+            Gallery
           </Link>
         </li>
       </ul>
