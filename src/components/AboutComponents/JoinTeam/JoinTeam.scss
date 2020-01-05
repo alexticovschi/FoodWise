@@ -1,0 +1,18 @@
+.join-team {
+  grid-column: center-start/ center-end;
+  // margin: 10rem 0;
+  text-align: center;
+
+
+  display: grid;
+  align-content: center;
+  justify-items: center;
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    padding: 0 20%;
+  }
+}

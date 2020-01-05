@@ -3,6 +3,8 @@ import Layout from "../components/Layout/Layout"
 import HeroBanner from "../components/HeroBanner/HeroBanner"
 import Hero from "../components/Hero/Hero"
 import About from "../components/AboutComponents/About/About"
+import Banner from "../components/AboutComponents/Banner/Banner"
+import JoinTeam from "../components/AboutComponents/JoinTeam/JoinTeam"
 
 import { graphql } from "gatsby"
 
@@ -29,6 +31,8 @@ const AboutPage = ({ data }) => (
         ></HeroBanner>
       </Hero>
       <About />
+      <Banner />
+      <JoinTeam />
     </Layout>
   </main>
 )
