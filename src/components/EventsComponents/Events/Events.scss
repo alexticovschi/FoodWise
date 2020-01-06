@@ -6,6 +6,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10rem;
+    background-color: var(--offWhite);
+    padding-left: 10rem;
+    padding-bottom: 5rem;
+    border-radius: 1rem;
   }
 
   &__text,
