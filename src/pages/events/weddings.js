@@ -8,6 +8,7 @@ import MuchMore from "../../components/EventsComponents/Weddings/MuchMore/MuchMo
 import Stories from "../../components/EventsComponents/Weddings/Stories/Stories"
 import Banner from "../../components/EventsComponents/Weddings/Banner/Banner"
 import Coordinate from "../../components/EventsComponents/Weddings/Coordinate/Coordinate"
+import Options from "../../components/EventsComponents/Weddings/Options/Options"
 
 import { graphql } from "gatsby"
 
@@ -39,6 +40,7 @@ const WeddingEvents = ({ data }) => {
         <Stories />
         <Banner />
         <Coordinate />
+        <Options />
       </Layout>
     </main>
   )
