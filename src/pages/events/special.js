@@ -5,6 +5,7 @@ import HeroBanner from "../../components/HeroBanner/HeroBanner"
 import Hero from "../../components/Hero/Hero"
 import Intro from "../../components/EventsComponents/Special/Intro/Intro"
 import SmallGallery from "../../components/EventsComponents/Special/SmallGallery/SmallGallery"
+import Brand from "../../components/EventsComponents/Special/Brand/Brand"
 
 export const query = graphql`
   query {
@@ -32,6 +33,7 @@ const SpecialEvents = ({ data }) => {
         </Hero>
         <Intro />
         <SmallGallery />
+        <Brand />
       </Layout>
     </main>
   )
