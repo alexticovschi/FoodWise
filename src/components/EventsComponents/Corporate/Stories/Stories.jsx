@@ -4,22 +4,22 @@ import StoryCard from "../../StoryCard/StoryCard"
 import "./Stories.scss"
 
 const getStoryImages = graphql`
-  query storyCorporateImages {
-    story1: file(relativePath: { eq: "events/weddings/stories/story1.jpg" }) {
+  query storyImages {
+    story1: file(relativePath: { eq: "events/corporate/stories/story1.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    story2: file(relativePath: { eq: "events/weddings/stories/story2.jpg" }) {
+    story2: file(relativePath: { eq: "events/corporate/stories/story2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    story3: file(relativePath: { eq: "events/weddings/stories/story3.jpg" }) {
+    story3: file(relativePath: { eq: "events/corporate/stories/story3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
@@ -34,25 +34,25 @@ const Stories = () => {
 
   return (
     <section className="stories">
-      <h1 className="stories__title">Stories</h1>
+      <h1 className="stories__title">Experience a Story</h1>
       <div className="stories__cards">
         <StoryCard
-          url="/events/weddings"
+          url="/events/corporate"
           imgSrc={story1}
-          name="Francesca & Alex’s Farmhouse Wedding"
-          text="Dreaming of a country wedding? Gourmet cuisine met pastoral beauty at this splendid affair."
+          name="Uncontainable Fun"
+          text="Creativity was key at a super-organized and festive celebration at The Container Store."
         />
         <StoryCard
-          url="/events/weddings"
+          url="/events/corporate"
           imgSrc={story2}
-          name="Lennard & Gary's Urban Affair"
-          text="A cool and creative wedding reception idea? We made it happen at this stunning city event."
+          name="Deliciously Healthy"
+          text="The best way to welcome a new health center? Design a menu with good-for-you cuisine."
         />
         <StoryCard
-          url="/events/weddings"
+          url="/events/corporate"
           imgSrc={story3}
-          name="Chloe & Edwin’s Double Wedding"
-          text="Sometimes you need to create two parties in one day. Learn how this couple did it."
+          name="A Business Birthday"
+          text="After 50 years of business, employees deserve a big ol’ party and a good ol’ time."
         />
       </div>
     </section>

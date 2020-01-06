@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Image from "gatsby-image"
 import "./StoryCard.scss"
 
-const StoryCard = ({ imgSrc, name, text }) => {
+const StoryCard = ({ imgSrc, name, text, url }) => {
   return (
     <div className="story-card">
       <figure>
@@ -17,7 +17,7 @@ const StoryCard = ({ imgSrc, name, text }) => {
       <div className="story-card__info">
         <h3 className="story-card__name">{name}</h3>
         <p className="story-card__text">{text}</p>
-        <Link to="/events/weddings">
+        <Link to={url}>
           <button className="story-card__btn">Read More</button>
         </Link>
       </div>

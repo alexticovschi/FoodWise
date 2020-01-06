@@ -1,11 +1,12 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../../components/Layout/Layout"
 import HeroBanner from "../../components/HeroBanner/HeroBanner"
 import Hero from "../../components/Hero/Hero"
 import Intro from "../../components/EventsComponents/Corporate/Intro/Intro"
 import SmallGallery from "../../components/EventsComponents/Corporate/SmallGallery/SmallGallery"
 import TrustedPartner from "../../components/EventsComponents/Corporate/TrustedPartner/TrustedPartner"
-import { graphql } from "gatsby"
+import Stories from "../../components/EventsComponents/Corporate/Stories/Stories"
 
 export const query = graphql`
   query {
@@ -35,6 +36,7 @@ const CorporateEvents = ({ data }) => {
         <Intro />
         <SmallGallery />
         <TrustedPartner />
+        <Stories />
       </Layout>
     </main>
   )
