@@ -1,8 +1,10 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../../components/Layout/Layout"
 import HeroBanner from "../../components/HeroBanner/HeroBanner"
 import Hero from "../../components/Hero/Hero"
-import { graphql } from "gatsby"
+import Intro from "../../components/EventsComponents/Special/Intro/Intro"
+import SmallGallery from "../../components/EventsComponents/Special/SmallGallery/SmallGallery"
 
 export const query = graphql`
   query {
@@ -28,6 +30,8 @@ const SpecialEvents = ({ data }) => {
             remember."
           ></HeroBanner>
         </Hero>
+        <Intro />
+        <SmallGallery />
       </Layout>
     </main>
   )
