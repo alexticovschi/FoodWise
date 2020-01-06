@@ -16,12 +16,13 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 3rem;
-    grid-row-gap: 8rem;
+    grid-row-gap: 4rem;
   }
 
   figure {
     display: grid;
     grid-template-rows: 23rem 1fr;
+    background-color: var(--offWhite);
   }
 
   &__img {
@@ -32,10 +33,10 @@
   }
 
   &__name {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: var(--primaryColor);
     text-align: center;
     margin: 0;
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 }
