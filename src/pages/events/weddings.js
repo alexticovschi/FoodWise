@@ -6,6 +6,9 @@ import BigDay from "../../components/EventsComponents/Weddings/BigDay/BigDay"
 import SmallGallery from "../../components/EventsComponents/Weddings/SmallGallery/SmallGallery"
 import MuchMore from "../../components/EventsComponents/Weddings/MuchMore/MuchMore"
 import Stories from "../../components/EventsComponents/Weddings/Stories/Stories"
+import Banner from "../../components/EventsComponents/Weddings/Banner/Banner"
+import Coordinate from "../../components/EventsComponents/Weddings/Coordinate/Coordinate"
+
 import { graphql } from "gatsby"
 
 export const query = graphql`
@@ -34,6 +37,8 @@ const WeddingEvents = ({ data }) => {
         <SmallGallery />
         <MuchMore />
         <Stories />
+        <Banner />
+        <Coordinate />
       </Layout>
     </main>
   )
