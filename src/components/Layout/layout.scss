@@ -78,7 +78,7 @@ p {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
       [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: auto 92vh min-content 50vh min-content 9vh;
+  grid-template-rows: auto 92vh min-content 50vh repeat(3, min-content) 9vh;
 }
 
 .events-container {

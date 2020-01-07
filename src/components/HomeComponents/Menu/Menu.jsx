@@ -5,56 +5,56 @@ import "./Menu.scss"
 
 const getImages = graphql`
   query images {
-    starter: file(relativePath: { eq: "home-menu/starter.jpg" }) {
+    starter: file(relativePath: { eq: "home/home-menu/starter.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    duck: file(relativePath: { eq: "home-menu/duck.jpg" }) {
+    duck: file(relativePath: { eq: "home/home-menu/duck.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    salad: file(relativePath: { eq: "home-menu/salad.jpg" }) {
+    salad: file(relativePath: { eq: "home/home-menu/salad.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    drinks: file(relativePath: { eq: "home-menu/drinks.jpg" }) {
+    drinks: file(relativePath: { eq: "home/home-menu/drinks.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    burger: file(relativePath: { eq: "home-menu/burger.jpg" }) {
+    burger: file(relativePath: { eq: "home/home-menu/burger.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    bites: file(relativePath: { eq: "home-menu/bites.jpg" }) {
+    bites: file(relativePath: { eq: "home/home-menu/bites.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    pizza: file(relativePath: { eq: "home-menu/pizza.jpg" }) {
+    pizza: file(relativePath: { eq: "home/home-menu/pizza.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    sweets: file(relativePath: { eq: "home-menu/sweets.jpg" }) {
+    sweets: file(relativePath: { eq: "home/home-menu/sweets.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid

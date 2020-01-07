@@ -5,6 +5,8 @@ import HeroBanner from "../components/HeroBanner/HeroBanner"
 import Banner from "../components/HomeComponents/Banner/Banner"
 import HomeEvents from "../components/HomeComponents/HomeEvents/HomeEvents"
 import Hero from "../components/Hero/Hero"
+import HomeGallery from "../components/HomeComponents/HomeGallery/HomeGallery"
+
 import { graphql } from "gatsby"
 
 export const query = graphql`
@@ -38,6 +40,7 @@ const IndexPage = ({ data }) => (
       <Menu />
       <Banner />
       <HomeEvents />
+      <HomeGallery />
     </Layout>
   </main>
 )

@@ -6,21 +6,21 @@ import "./HomeEvents.scss"
 
 const getMenuImages = graphql`
   query menuImages {
-    corporate: file(relativePath: { eq: "home-events/corporate.jpg" }) {
+    corporate: file(relativePath: { eq: "home/home-events/corporate.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    wedding: file(relativePath: { eq: "home-events/wedding.jpg" }) {
+    wedding: file(relativePath: { eq: "home/home-events/wedding.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    special: file(relativePath: { eq: "home-events/special.jpg" }) {
+    special: file(relativePath: { eq: "home/home-events/special.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
