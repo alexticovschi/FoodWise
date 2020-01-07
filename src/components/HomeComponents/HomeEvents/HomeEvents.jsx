@@ -41,7 +41,7 @@ const HomeEvents = () => {
         meet the culinary preferences of customers and budget requirements.
       </p>
 
-      <figure className="home-events__list">
+      <div className="home-events__list">
         <figure className="event">
           <Image
             fluid={corporate.childImageSharp.fluid}
@@ -96,7 +96,7 @@ const HomeEvents = () => {
             </Link>
           </div>
         </figure>
-      </figure>
+      </div>
     </section>
   )
 }

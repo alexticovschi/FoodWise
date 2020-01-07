@@ -2,24 +2,42 @@
   grid-column: center-start/ center-end;
   padding: 16rem 0;
 
+  @media screen and (max-width: 765px) {
+    grid-column: full-start/ full-end;
+    margin: 0 1.5rem;
+    padding: 6rem 0;
+  }
+
   &__title {
     margin-bottom: 4rem;
     font-size: 4rem;
     text-align: center;
+
+    @media screen and (max-width: 900px) {
+      font-size: 3rem;
+    }
   }
 
   &__subtitle {
-    padding: 0 14% 3%;
+    padding: 0 14% 0;
     font-size: 1.8rem;
     text-align: center;
+
+    @media screen and (max-width: 900px) {
+      padding: 0;
+    }
   }
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
-    grid-column-gap: 5rem;
+    grid-gap: 4rem;
+    margin: 4rem 0;
+
+    @media screen and (max-width: 765px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .event {

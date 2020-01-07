@@ -2,11 +2,30 @@
   grid-column: center-start/ center-end;
   padding: 15rem 0;
 
+  @media screen and (max-width: 765px) {
+    grid-column: full-start/ full-end;
+    margin: 0 1.5rem;
+    padding: 10rem 0;
+  }
+
   &__title {
-    font-size: 4rem;
+    font-size: 3.6rem;
     width: 50%;
     margin: 0 auto;
     text-align: center;
+
+    @media screen and (max-width: 1160px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 900px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 775px) {
+      width: 100%;
+      font-size: 2.6rem;
+    }
   }
 
   &__list {
@@ -17,6 +36,11 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 3rem;
     grid-row-gap: 4rem;
+
+    @media screen and (max-width: 765px) {
+      grid-row-gap: 3rem;
+      padding-bottom: 0;
+    }
   }
 
   figure {

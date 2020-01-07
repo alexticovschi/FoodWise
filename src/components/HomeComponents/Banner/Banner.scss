@@ -23,7 +23,7 @@
   }
 
   &__title {
-    font-size: 5.5rem;
+    font-size: 5rem;
     color: var(--primaryColor);
     position: absolute;
     z-index: 10;
@@ -35,5 +35,10 @@
     align-content: center;
     justify-items: center;
     text-align: center;
+
+    @media screen and (max-width: 765px) {
+      font-size: 3rem;
+      padding: 0 5%;
+    }
   }
 }
