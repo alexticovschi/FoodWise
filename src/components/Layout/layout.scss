@@ -52,10 +52,6 @@ body {
   outline: none;
 }
 
-a {
-  height: 0;
-}
-
 h1,
 h2,
 h3,
@@ -97,6 +93,10 @@ p {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
       [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: auto auto min-content 50vh 60vh 9vh;
+
+  @media screen and (max-width: 765px) {
+    grid-template-rows: auto auto min-content 40vh min-content 9vh;
+  }
 }
 
 .corporate-events-container {

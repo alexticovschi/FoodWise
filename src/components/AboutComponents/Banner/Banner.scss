@@ -5,6 +5,14 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 
+  @media screen and (max-width: 1190px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media screen and (max-width: 765px) {
+    grid-template-columns: 1fr;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -20,6 +28,7 @@
 
   &__img {
     grid-column: 1 / -1;
+    grid-row: 1 / -1;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -29,6 +38,7 @@
   &__title {
     font-size: 4.5rem;
     color: var(--primaryColor);
+    padding: 0 2%;
     position: absolute;
     z-index: 10;
     top: 0;
@@ -42,6 +52,19 @@
 
     grid-column: 2 / span 2;
 
+    @media screen and (max-width: 1190px) {
+      grid-column: 1 / span 2;
+      padding: 0;
+      margin: 0;
+    }
+
+    @media screen and (max-width: 765px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 765px) {
+      padding: 0 1%;
+    }
   }
 
   &__text {
@@ -62,6 +85,13 @@
     line-height: 30px;
     grid-column: 4 / span 2;
 
-  }
+    @media screen and (max-width: 1190px) {
+      grid-column: 3 / span 2;
+      padding: 0 3rem;
+    }
 
+    @media screen and (max-width: 765px) {
+      display: none;
+    }
+  }
 }

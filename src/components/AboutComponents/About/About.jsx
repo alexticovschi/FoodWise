@@ -22,7 +22,7 @@ const About = () => {
   return (
     <section className="about">
       <div className="about__info">
-        <figure>
+        <figure className="about__img-wrapper">
           <Image
             fluid={aboutLeft.childImageSharp.fluid}
             className="about__img"

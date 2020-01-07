@@ -18,11 +18,11 @@ const Banner = () => {
   `
   const { banner } = useStaticQuery(getImage)
   return (
-    <div className="about-banner">
+    <div className="weddings-banner">
       <Image
         fluid={banner.childImageSharp.fluid}
-        className="about-banner__img"
-        alt="about banner"
+        className="weddings-banner__img"
+        alt="weddings banner"
       />
     </div>
   )
