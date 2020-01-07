@@ -50,7 +50,7 @@ const EventList = () => {
               <button className="event-btn">Read More</button>
             </Link>
           </div>
-          <figure>
+          <figure className="event-corporate__img-wrapper">
             <Image
               fluid={corporate.childImageSharp.fluid}
               className="event-corporate__img"
@@ -62,7 +62,7 @@ const EventList = () => {
 
       <div className="event-weddings">
         <div className="event-weddings__info">
-          <figure>
+          <figure className="event-weddings__img-wrapper">
             <Image
               fluid={weddings.childImageSharp.fluid}
               className="event-weddings__img"
@@ -98,7 +98,7 @@ const EventList = () => {
               <button className="event-btn">Read More</button>
             </Link>
           </div>
-          <figure>
+          <figure className="event-special__img-wrapper">
             <Image
               fluid={special.childImageSharp.fluid}
               className="event-special__img"
