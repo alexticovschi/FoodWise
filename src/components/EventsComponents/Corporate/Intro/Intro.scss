@@ -1,14 +1,32 @@
-.intro {
+.corporate-intro {
   grid-column: center-start/ center-end;
   margin: 10rem 0;
+
+  @media screen and (max-width: 765px) {
+    grid-column: full-start / full-end;
+    margin: 6rem 0;
+  }
 
   display: grid;
   align-content: center;
   justify-items: center;
 
+  &__title {
+    text-align: center;
+
+    @media screen and (max-width: 765px) {
+      font-size: 2.8rem;
+      padding: 0 3%;
+    }
+  }
+
   &__text {
     padding: 0 20%;
     text-align: center;
     line-height: 30px;
+
+    @media screen and (max-width: 475px) {
+      padding: 0 1.5rem;
+    }
   }
 }
