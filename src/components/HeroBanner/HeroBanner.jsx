@@ -1,15 +1,15 @@
-import React from "react"
+import React from 'react';
 
-import "./HeroBanner.scss"
+import './HeroBanner.scss';
 
 const HeroBanner = ({ title, subtitle, children }) => {
-  return (
-    <div className="hero-banner">
-      <h1 className="hero-banner__title">{title}</h1>
-      <p className="hero-banner__subtitle">{subtitle}</p>
-      {children}
-    </div>
-  )
-}
+	return (
+		<div className='hero-banner'>
+			<h1 className='hero-banner__title'>{title}</h1>
+			<h5 className='hero-banner__subtitle'>{subtitle}</h5>
+			{children}
+		</div>
+	);
+};
 
-export default HeroBanner
+export default HeroBanner;

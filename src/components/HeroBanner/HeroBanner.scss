@@ -4,7 +4,7 @@
   color: var(--mainWhite);
 
   &__title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 3rem;
     letter-spacing: 6px;
@@ -13,8 +13,8 @@
 
   &__subtitle {
     width: 85%;
-    letter-spacing: 6px;
-    padding: 3rem 0;
+    letter-spacing: 2px;
+    padding: 2rem 0;
     margin: auto;
     color: var(--mainWhite);
 
@@ -33,6 +33,8 @@
 
     &__subtitle {
       width: 70%;
+      font-size: 2.6rem;
+      font-weight: 500;
     }
   }
 }
