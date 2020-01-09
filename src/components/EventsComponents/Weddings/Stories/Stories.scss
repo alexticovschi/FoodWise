@@ -1,20 +1,31 @@
-.stories {
+.wedding-stories {
   grid-column: center-start/ center-end;
   margin-bottom: 10rem;
 
-  &__title {
-    text-align: center;
+
+  @media screen and (max-width: 765px) {
+    grid-column: full-start / full-end;
+    margin: 0 1.5rem;
+    margin-bottom: 6rem;
   }
 
-  &__text {
-    padding: 0 20%;
+  &__title {
     text-align: center;
-    line-height: 30px;
+
+    @media screen and (max-width: 765px) {
+      font-size: 2.6rem;
+      padding: 0 2%;
+    }
   }
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+
+    @media screen and (max-width: 765px) {
+      grid-row-gap: 4.5rem;
+    }
   }
 }

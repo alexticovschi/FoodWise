@@ -33,9 +33,9 @@ const Stories = () => {
   const { story1, story2, story3 } = useStaticQuery(getStoryImages)
 
   return (
-    <section className="stories">
-      <h1 className="stories__title">Stories</h1>
-      <div className="stories__cards">
+    <section className="wedding-stories">
+      <h1 className="wedding-stories__title">Stories</h1>
+      <div className="wedding-stories__cards">
         <StoryCard
           url="/events/weddings"
           imgSrc={story1}
