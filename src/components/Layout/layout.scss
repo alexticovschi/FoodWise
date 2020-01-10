@@ -42,6 +42,10 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  background-color: var(--mainWhite) !important;
+}
+
 *,
 *::before,
 *::after {
