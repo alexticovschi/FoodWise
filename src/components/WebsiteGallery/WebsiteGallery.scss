@@ -1,0 +1,9 @@
+.website-gallery {
+  grid-column: center-start/ center-end;
+  margin: 10rem 0;
+
+  @media screen and (max-width: 765px) {
+    grid-column: full-start / full-end;
+    margin: 6rem 1.5rem;
+  }
+}
