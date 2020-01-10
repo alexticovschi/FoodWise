@@ -22,7 +22,7 @@ const SideDrawer = ({ show, click }) => {
           </Link>
         </li>
         <li>
-          <Link to="/Gallery" className="side-drawer__link">
+          <Link to="/gallery" className="side-drawer__link">
             Gallery
           </Link>
         </li>
