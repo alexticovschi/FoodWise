@@ -2,6 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import EventList from "../EventList/EventList"
+import AcreditedVenues from "../AcreditedVenues/AcreditedVenues"
+import RealEvents from "../RealEvents/RealEvents"
+
 import "./Events.scss"
 
 const getImage = graphql`
@@ -65,6 +68,8 @@ const Events = () => {
       </section>
 
       <EventList />
+      <AcreditedVenues />
+      <RealEvents />
     </>
   )
 }

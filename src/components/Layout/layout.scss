@@ -78,6 +78,25 @@ p {
   line-height: 25px;
 }
 
+.btn {
+  width: 18rem;
+  height: 5rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--mainWhite);
+  background-color: var(--primaryColor);
+  border-radius: .6rem;
+  border: .15rem solid var(--primaryColor);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background-color: var(--secondaryColor);
+  }
+}
+
 .home-container {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
@@ -89,7 +108,7 @@ p {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
       [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: auto auto min-content min-content 9vh;
+  grid-template-rows: auto auto repeat(4, min-content) 9vh;
 }
 
 .about-container {
