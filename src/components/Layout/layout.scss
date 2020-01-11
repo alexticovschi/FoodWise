@@ -83,6 +83,7 @@ p {
   height: 5rem;
   line-height: 3rem;
   font-size: 2rem;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   color: var(--mainWhite);
   background-color: var(--primaryColor);
@@ -94,6 +95,10 @@ p {
 
   &:hover {
     background-color: var(--secondaryColor);
+  }
+
+  @media screen and (max-width: 575px) {
+    font-size: 1.6rem;
   }
 }
 
