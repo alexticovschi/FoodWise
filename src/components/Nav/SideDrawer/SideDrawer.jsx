@@ -11,6 +11,7 @@ const SideDrawer = ({ show, click }) => {
             Home
           </Link>
         </li>
+
         <li>
           <Link to="/about" className="side-drawer__link">
             About
@@ -19,6 +20,11 @@ const SideDrawer = ({ show, click }) => {
         <li>
           <Link to="/events" className="side-drawer__link">
             Events
+          </Link>
+        </li>
+        <li>
+          <Link to="/venues" className="nav__link">
+            Venues
           </Link>
         </li>
         <li>

@@ -1,0 +1,48 @@
+.venue-card {
+  &__img-wrapper {
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &:hover>.venue-card__overlay>.venue-card__content {
+      max-height: 40rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+
+
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+    background-color: var(--primaryColor);
+    transition: background-color ease .4s;
+  }
+
+  &__name {
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    line-height: 25px;
+    transition: color ease .4s;
+  }
+
+  &__content {
+    max-height: 0;
+    height: auto;
+    overflow: hidden;
+    transition: max-height ease .75s;
+    font-size: 1.8rem;
+  }
+}

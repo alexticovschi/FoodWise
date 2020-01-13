@@ -78,11 +78,15 @@ p {
   line-height: 25px;
 }
 
+span {
+  font-family: 'Playfair Display', serif;
+}
+
 .btn {
   width: 18rem;
   height: 5rem;
   line-height: 3rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: 'Playfair Display', serif;
   text-align: center;
   color: var(--mainWhite);
@@ -95,10 +99,6 @@ p {
 
   &:hover {
     background-color: var(--secondaryColor);
-  }
-
-  @media screen and (max-width: 575px) {
-    font-size: 1.6rem;
   }
 }
 
@@ -114,6 +114,13 @@ p {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
       [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: auto auto repeat(4, min-content) 9vh;
+}
+
+.venues-container {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
+      [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: auto auto min-content 9vh;
 }
 
 .about-container {

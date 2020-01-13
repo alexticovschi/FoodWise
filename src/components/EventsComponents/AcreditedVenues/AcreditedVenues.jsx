@@ -33,7 +33,7 @@ const AcreditedVenues = () => {
             and Historic Royal Palaces. Click here to view our collection of
             venues within the U.K.
           </p>
-          <Link className="btn acredited-venue__btn" to="/events">
+          <Link className="btn acredited-venue__btn" to="/venues">
             Venues
           </Link>
         </div>

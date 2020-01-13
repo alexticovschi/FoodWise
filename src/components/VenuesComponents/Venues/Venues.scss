@@ -1,0 +1,9 @@
+.venues {
+  grid-column: center-start/ center-end;
+  margin: 10rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  grid-gap: 3rem;
+
+}
