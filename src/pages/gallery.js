@@ -3,6 +3,7 @@ import Layout from "../components/Layout/Layout"
 import HeroBanner from "../components/HeroBanner/HeroBanner"
 import Hero from "../components/Hero/Hero"
 import WebsiteGallery from "../components/WebsiteGallery/WebsiteGallery"
+import { graphql } from "gatsby"
 
 export const query = graphql`
   query {
