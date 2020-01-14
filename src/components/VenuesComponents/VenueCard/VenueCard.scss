@@ -8,6 +8,15 @@
     &:hover>.venue-card__overlay>.venue-card__content {
       max-height: 40rem;
     }
+
+    &:hover>.venue-card__overlay {
+      background-color: var(--mainWhite);
+      color: #000;
+    }
+
+    &:hover>.venue-card__overlay>.venue-card__name {
+      color: var(--primaryColor);
+    }
   }
 
   &__img {
@@ -16,8 +25,6 @@
     object-fit: cover;
     display: block;
     cursor: pointer;
-
-
   }
 
   &__overlay {
@@ -26,7 +33,7 @@
     width: 100%;
     padding: 2.5rem 1.5rem;
     background-color: var(--primaryColor);
-    transition: background-color ease .4s;
+    transition: background-color ease .5s;
   }
 
   &__name {
