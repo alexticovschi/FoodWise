@@ -1,6 +1,9 @@
 import React from "react"
 import Image from "gatsby-image"
 import "./VenueCard.scss"
+import flower from "../../../images/venues/svg/flower.svg"
+import dinner from "../../../images/venues/svg/dinner.svg"
+import reception from "../../../images/venues/svg/reception.svg"
 
 const VenueCard = ({ imgSrc, name }) => {
   return (
@@ -12,13 +15,24 @@ const VenueCard = ({ imgSrc, name }) => {
           alt="venue card"
         />
         <div className="venue-card__overlay">
-          <span className="venue-card__name">{name}</span>
-          <div className="venue-card__content">
-            <div className="venue-card__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae numquam impedit fugit provident ullam magni, molestiae
-              perspiciatis quo eligendi aliquam.
-            </div>
+          <h3 className="venue-card__name">{name}</h3>
+          <div className="venue-card__features">
+            <figure className="venue-card__icon-wrapper">
+              <img className="venue-card__icon" src={flower} alt="venue icon" />
+              <p className="venue-card__text">Garden</p>
+            </figure>
+            <figure className="venue-card__icon-wrapper">
+              <img className="venue-card__icon" src={dinner} alt="venue icon" />
+              <p className="venue-card__text">Seated</p>
+            </figure>
+            <figure className="venue-card__icon-wrapper">
+              <img
+                className="venue-card__icon"
+                src={reception}
+                alt="venue icon"
+              />
+              <p className="venue-card__text">Reception</p>
+            </figure>
           </div>
         </div>
       </figure>
