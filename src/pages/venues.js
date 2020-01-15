@@ -3,7 +3,6 @@ import Layout from "../components/Layout/Layout"
 import Venues from "../components/VenuesComponents/Venues/Venues"
 import { useStaticQuery, graphql } from "gatsby"
 import SwiperSlider from "../components/SwiperSlider/SwiperSlider"
-import { Link } from "gatsby"
 
 const getSliderImages = graphql`
   query sliderImages {
@@ -49,7 +48,6 @@ const getSliderImages = graphql`
 
 const VenuesPage = () => {
   const images = useStaticQuery(getSliderImages)
-
   return (
     <main className="venues-container">
       <Layout>
