@@ -23,7 +23,7 @@ const SideDrawer = ({ show, click }) => {
           </Link>
         </li>
         <li>
-          <Link to="/venues" className="nav__link">
+          <Link to="/venues" className="side-drawer__link">
             Venues
           </Link>
         </li>
