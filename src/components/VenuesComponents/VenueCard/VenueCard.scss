@@ -6,8 +6,12 @@
     position: relative;
     transition: color ease .4s;
 
+    @media screen and (max-width: 765px) {
+      height: 100%;
+    }
+
     &:hover {
-      box-shadow: 0px 6px 18px 2px rgba(209,209,209,1);
+      box-shadow: 0px 6px 18px 2px rgba(209, 209, 209, 1);
     }
 
     &:hover>.venue-card__overlay>.venue-card__features {
@@ -54,10 +58,14 @@
     margin: 0;
     align-self: center;
     transition: color ease .4s;
+
+    @media screen and (max-width: 765px) {
+      font-size: 1.6rem;
+    }
   }
 
   &__features {
-    max-height: 0rem;
+    max-height: 0;
     overflow: hidden;
     transition: max-height ease .75s;
 
