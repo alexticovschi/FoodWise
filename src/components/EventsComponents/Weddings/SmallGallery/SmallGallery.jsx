@@ -29,32 +29,20 @@ const getGalleryImages = graphql`
   }
 `
 const SmallGallery = () => {
-  const { img1, img2, img3 } = useStaticQuery(getGalleryImages)
+  const images = useStaticQuery(getGalleryImages)
 
   return (
     <section className="wedding-gallery">
       <div className="wedding-gallery__wrapper">
-        <figure className="wedding-gallery__img1">
-          <Image
-            fluid={img1.childImageSharp.fluid}
-            className="wedding-gallery__img"
-            alt="wedding"
-          />
-        </figure>
-        <figure className="wedding-gallery__img2">
-          <Image
-            fluid={img2.childImageSharp.fluid}
-            className="wedding-gallery__img"
-            alt="wedding"
-          />
-        </figure>
-        <figure className="wedding-gallery__img3">
-          <Image
-            fluid={img3.childImageSharp.fluid}
-            className="wedding-gallery__img"
-            alt="wedding"
-          />
-        </figure>
+        {Object.values(images).map((img, i) => (
+          <figure className={`wedding-gallery__img${i + 1}`}>
+            <Image
+              fluid={img.childImageSharp.fluid}
+              className="wedding-gallery__img"
+              alt="special"
+            />
+          </figure>
+        ))}
       </div>
     </section>
   )

@@ -36,39 +36,20 @@ const getCorporateGalleryImages = graphql`
   }
 `
 const SmallGallery = () => {
-  const { img1, img2, img3, img4 } = useStaticQuery(getCorporateGalleryImages)
+  const images = useStaticQuery(getCorporateGalleryImages)
 
   return (
-    <section className="sm-gallery">
-      <div className="sm-gallery__wrapper">
-        <figure className="sm-gallery__img1">
-          <Image
-            fluid={img1.childImageSharp.fluid}
-            className="sm-gallery__img"
-            alt="corporate"
-          />
-        </figure>
-        <figure className="sm-gallery__img2">
-          <Image
-            fluid={img2.childImageSharp.fluid}
-            className="sm-gallery__img"
-            alt="corporate"
-          />
-        </figure>
-        <figure className="sm-gallery__img3">
-          <Image
-            fluid={img3.childImageSharp.fluid}
-            className="sm-gallery__img"
-            alt="corporate"
-          />
-        </figure>
-        <figure className="sm-gallery__img4">
-          <Image
-            fluid={img4.childImageSharp.fluid}
-            className="sm-gallery__img"
-            alt="corporate"
-          />
-        </figure>
+    <section className="corporate-gallery">
+      <div className="corporate-gallery__wrapper">
+        {Object.values(images).map((img, i) => (
+          <figure key={i} className={`corporate-gallery__img${i + 1}`}>
+            <Image
+              fluid={img.childImageSharp.fluid}
+              className="corporate-gallery__img"
+              alt="corporate"
+            />
+          </figure>
+        ))}
       </div>
     </section>
   )
