@@ -1,15 +1,45 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
-import HeroBanner from "../components/HeroBanner/HeroBanner"
-import Hero from "../components/Hero/Hero"
 import Venues from "../components/VenuesComponents/Venues/Venues"
-import { graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import SwiperSlider from "../components/SwiperSlider/SwiperSlider"
+import { Link } from "gatsby"
 
-export const query = graphql`
-  query {
-    venuesHeroImage: file(relativePath: { eq: "venues/banner-venue.jpg" }) {
+const getSliderImages = graphql`
+  query sliderImages {
+    img1: file(
+      relativePath: { eq: "venues/slider/natural-history-museum.jpg" }
+    ) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 4140) {
+        fluid(maxWidth: 1800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img2: file(relativePath: { eq: "venues/slider/westminister-abbey.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img3: file(relativePath: { eq: "venues/slider/kensington-palace.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img4: file(relativePath: { eq: "venues/slider/lancaster-house.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img5: file(relativePath: { eq: "venues/slider/sky-garden.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -17,17 +47,16 @@ export const query = graphql`
   }
 `
 
-const VenuesPage = ({ data }) => (
-  <main className="venues-container">
-    <Layout>
-      <Hero opacity="true" img={data.venuesHeroImage.childImageSharp.fluid}>
-        <HeroBanner className="hero-banner" title="Accredited Event Venues">
-          <button className="hero-btn">Begin Planning</button>
-        </HeroBanner>
-      </Hero>
-      <Venues />
-    </Layout>
-  </main>
-)
+const VenuesPage = () => {
+  const images = useStaticQuery(getSliderImages)
 
+  return (
+    <main className="venues-container">
+      <Layout>
+        <SwiperSlider images={images} title="Accredited Venues" />
+        <Venues />
+      </Layout>
+    </main>
+  )
+}
 export default VenuesPage
