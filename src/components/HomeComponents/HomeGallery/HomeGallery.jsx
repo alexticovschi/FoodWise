@@ -65,70 +65,21 @@ const getHomeGalleryImages = graphql`
 `
 
 const HomeGallery = () => {
-  const { img1, img2, img3, img4, img5, img6, img7, img8 } = useStaticQuery(
-    getHomeGalleryImages
-  )
+  const images = useStaticQuery(getHomeGalleryImages)
 
   return (
     <>
       <div className="background"></div>
       <div className="home-gallery">
-        <figure className="home-gallery__img1">
-          <Image
-            fluid={img1.childImageSharp.fluid}
-            className="home-gallery__img"
-            alt="food gallery"
-          />
-        </figure>
-        <figure className="home-gallery__img2">
-          <Image
-            fluid={img2.childImageSharp.fluid}
-            className="home-gallery__img"
-            alt="food gallery"
-          />
-        </figure>
-        <figure className="home-gallery__img3">
-          <Image
-            fluid={img3.childImageSharp.fluid}
-            className="home-gallery__img"
-            alt="food gallery"
-          />
-        </figure>
-        <figure className="home-gallery__img4">
-          <Image
-            fluid={img4.childImageSharp.fluid}
-            className="home-gallery__img"
-            alt="food gallery"
-          />
-        </figure>
-        <figure className="home-gallery__img5">
-          <Image
-            fluid={img5.childImageSharp.fluid}
-            className="home-gallery__img"
-            alt="food gallery"
-          />
-        </figure>
-        <figure className="home-gallery__img6">
-          <Image
-            fluid={img6.childImageSharp.fluid}
-            className="home-gallery__img"
-            alt="food gallery"
-          />
-        </figure>
-        <figure className="home-gallery__img7">
-          <Image
-            fluid={img7.childImageSharp.fluid}
-            className="home-gallery__img"
-            alt="food gallery"
-          />
-        </figure>
-        <figure className="home-gallery__img8">
-          <Image
-            fluid={img8.childImageSharp.fluid}
-            className="home-gallery__img"
-            alt="food gallery"
-          />
-        </figure>
+        {Object.values(images).map((img, i) => (
+          <figure key={i} className={`home-gallery__img${i + 1}`}>
+            <Image
+              fluid={img.childImageSharp.fluid}
+              className="home-gallery__img"
+              alt="food gallery"
+            />
+          </figure>
+        ))}
       </div>
     </>
   )
