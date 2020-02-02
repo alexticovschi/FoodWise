@@ -102,31 +102,34 @@ span {
   }
 }
 
-.home-container {
+@mixin template-columns {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
       [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.home-container {
+  @include template-columns;
   grid-template-rows: auto auto min-content 50vh repeat(3, min-content) 9vh;
 }
 
 .events-container {
-  display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
-      [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  @include template-columns;
   grid-template-rows: auto auto repeat(4, min-content) 9vh;
 }
 
 .venues-container {
-  display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
-      [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  @include template-columns;
   grid-template-rows: auto auto min-content 9vh;
 }
 
+.venue-container {
+  @include template-columns;
+  grid-template-rows: auto min-content 9vh;
+}
+
 .about-container {
-  display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
-      [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  @include template-columns;
   grid-template-rows: auto auto min-content 50vh 60vh 9vh;
 
   @media screen and (max-width: 765px) {
@@ -135,29 +138,21 @@ span {
 }
 
 .gallery-container {
-  display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
-      [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  @include template-columns;
   grid-template-rows: auto auto min-content 9vh;
 }
 
 .corporate-events-container {
-  display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
-      [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  @include template-columns;
   grid-template-rows: auto auto repeat(4, min-content) 9vh;
 }
 
 .special-events-container {
-  display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
-      [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  @include template-columns;
   grid-template-rows: auto auto repeat(3, min-content) 9vh;
 }
 
 .wedding-events-container {
-  display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
-      [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  @include template-columns;
   grid-template-rows: auto auto repeat(4, min-content) 50vh min-content min-content 9vh;
 }
