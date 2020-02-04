@@ -11,8 +11,8 @@ const JoinTeam = () => {
         If you have a passion for catering and events, you could be just the
         right person to join our team. Explore our available opportunities.
       </p>
-      <Link to="/about">
-        <button className="event-btn">Learn More</button>
+      <Link className="btn" to="/about">
+        Learn More
       </Link>
     </section>
   )

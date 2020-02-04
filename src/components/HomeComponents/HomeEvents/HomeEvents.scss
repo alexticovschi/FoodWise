@@ -44,7 +44,7 @@
     grid-gap: 4rem;
     margin: 4rem 0;
 
-    @media screen and (max-width: 765px) {
+    @media screen and (max-width: 900px) {
       grid-template-columns: 1fr;
     }
   }
@@ -67,7 +67,7 @@
       bottom: 0;
       margin: 10%;
       padding: 0 3%;
-      border: .1rem solid var(--offWhite);
+      border: 0.1rem solid var(--offWhite);
       display: grid;
       grid-template-rows: repeat(3, 1fr);
       align-content: center;
@@ -95,14 +95,16 @@
     }
 
     &__btn {
-      margin: 0 auto;
-      width: 16rem;
-      height: 5.5rem;
+      padding: 1rem 4rem;
+      margin: auto;
+      margin-top: 2rem;
+      line-height: 3rem;
       font-size: 1.6rem;
+      font-family: "Playfair Display", serif;
+      text-align: center;
       color: var(--mainWhite);
       background-color: var(--primaryColor);
-      border-radius: .6rem;
-      border: .15rem solid var(--primaryColor);
+      border-radius: 0.6rem;
       border: none;
       cursor: pointer;
       transition: all 0.3s ease 0s;
@@ -111,6 +113,5 @@
         background-color: var(--secondaryColor);
       }
     }
-
   }
 }

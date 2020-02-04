@@ -55,8 +55,8 @@ const HomeEvents = () => {
               staff parties and teaching. we understand that each brand is
               different, and that details are key.
             </p>
-            <Link to="/events/corporate">
-              <button className="event__btn">Find More</button>
+            <Link className="btn" to="/events/corporate">
+              Find More
             </Link>
           </div>
         </figure>
@@ -73,8 +73,8 @@ const HomeEvents = () => {
               through to menu design, personal consultations, logistics and the
               all-important food tasting.
             </p>
-            <Link to="/events/weddings">
-              <button className="event__btn">Find More</button>
+            <Link className="btn" to="/events/weddings">
+              Find More
             </Link>
           </div>
         </figure>
@@ -91,8 +91,8 @@ const HomeEvents = () => {
               birthday party, retirement celebration, christening, or an
               intimate dinner with your closest friends.
             </p>
-            <Link to="/events/special">
-              <button className="event__btn">Find More</button>
+            <Link className="btn" to="/events/special">
+              Find More
             </Link>
           </div>
         </figure>

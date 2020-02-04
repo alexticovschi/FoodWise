@@ -12,8 +12,8 @@ const MuchMore = () => {
         flowers and photography, FoodWise Catering values the small details to
         make sure your wedding will be unforgettable.
       </p>
-      <Link to="/about">
-        <button className="muchmore__btn">Contact an Event Designer</button>
+      <Link className="btn" to="/about">
+        Contact an Event Designer
       </Link>
     </section>
   )

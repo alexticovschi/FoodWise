@@ -21,6 +21,26 @@
     grid-row-gap: 8rem;
   }
 
+  .event-btn {
+    padding: 1rem 4rem;
+    margin: auto;
+    margin-top: 2rem;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: var(--mainWhite);
+    background-color: var(--primaryColor);
+    border-radius: 0.6rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      background-color: var(--secondaryColor);
+    }
+  }
+
   .event-corporate,
   .event-weddings,
   .event-special {

@@ -17,8 +17,8 @@ const StoryCard = ({ imgSrc, name, text, url }) => {
       <div className="story-card__info">
         <h3 className="story-card__name">{name}</h3>
         <p className="story-card__text">{text}</p>
-        <Link to={url}>
-          <button className="story-card__btn">Read More</button>
+        <Link className="btn" to={url}>
+          Read More
         </Link>
       </div>
     </div>

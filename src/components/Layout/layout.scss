@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap");
 
 :root {
   --primaryColor: rgb(242, 159, 5);
@@ -19,7 +19,7 @@ html {
 
   /* Scrollbar styles */
   &::-webkit-scrollbar {
-    width: .7rem;
+    width: 0.7rem;
   }
 
   &::-webkit-scrollbar-track {
@@ -29,7 +29,11 @@ html {
 
   &::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-image: linear-gradient(to bottom, var(--primaryColor) 60%, #242424);
+    background-image: linear-gradient(
+      to bottom,
+      var(--primaryColor) 60%,
+      #242424
+    );
     outline: 1px solid var(--lightGrey);
   }
 }
@@ -62,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: bold;
   margin-bottom: 3rem;
   font-size: 3rem;
@@ -72,27 +76,28 @@ h6 {
 
 p {
   margin-bottom: 1.25rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: var(--darkGrey);
   font-size: 1.6rem;
   line-height: 25px;
 }
 
 span {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .btn {
-  width: 18rem;
-  height: 5rem;
+  display: inline-block;
+  padding: 1rem 4rem;
+  margin: auto;
+  margin-top: 2rem;
   line-height: 3rem;
   font-size: 1.6rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   color: var(--mainWhite);
   background-color: var(--primaryColor);
-  border-radius: .6rem;
-  border: .15rem solid var(--primaryColor);
+  border-radius: 0.6rem;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -104,8 +109,12 @@ span {
 
 @mixin template-columns {
   display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
-      [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 16rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 .home-container {

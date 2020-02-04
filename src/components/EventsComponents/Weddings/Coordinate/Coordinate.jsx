@@ -12,8 +12,8 @@ const Coordinate = () => {
         servers have earned us a stellar reputation among London area event
         venues.
       </p>
-      <Link to="/events/weddings">
-        <button className="coordinate__btn">Find Out More</button>
+      <Link className="btn" to="/events/weddings">
+        Find Out More
       </Link>
     </section>
   )

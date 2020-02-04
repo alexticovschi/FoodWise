@@ -12,8 +12,8 @@ const Brand = () => {
         beverage. Our best-in-class work elevates our clients’ sophisticated
         branding and hospitality goals.
       </p>
-      <Link to="/events/special">
-        <button className="brand__btn">Let's Discuss Your Event</button>
+      <Link className="btn" to="/events/special">
+        Let's Discuss Your Event
       </Link>
     </section>
   )

@@ -69,20 +69,3 @@
     }
   }
 }
-
-.event-btn {
-  margin: 2rem 0;
-  width: 18rem;
-  height: 5rem;
-  font-size: 1.6rem;
-  color: var(--mainWhite);
-  background-color: var(--primaryColor);
-  border-radius: .6rem;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-
-  &:hover {
-    background-color: var(--secondaryColor);
-  }
-}

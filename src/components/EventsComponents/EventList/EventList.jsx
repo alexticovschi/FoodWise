@@ -46,8 +46,8 @@ const EventList = () => {
               brand identity and creating an event that is a clear reflection of
               your goals and target audience.
             </p>
-            <Link to="/events/corporate">
-              <button className="event-btn">Read More</button>
+            <Link className="btn" to="/events/corporate">
+              Read More
             </Link>
           </div>
           <figure className="event-corporate__img-wrapper">
@@ -77,8 +77,8 @@ const EventList = () => {
               all the trimmings, friendly bowl food, or a combination of all of
               the above, we will work with you to create your perfect menu.
             </p>
-            <Link to="/events/weddings">
-              <button className="event-btn">Read More</button>
+            <Link className="btn" to="/events/weddings">
+              Read More
             </Link>
           </div>
         </div>
@@ -94,8 +94,8 @@ const EventList = () => {
               of friends. Each event is special to us and we bring the same
               sense of fun, creativity and imagination to everything we do.
             </p>
-            <Link to="/events/special">
-              <button className="event-btn">Read More</button>
+            <Link className="btn" to="/events/special">
+              Read More
             </Link>
           </div>
           <figure className="event-special__img-wrapper">

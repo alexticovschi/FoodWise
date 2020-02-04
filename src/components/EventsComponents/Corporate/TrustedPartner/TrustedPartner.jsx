@@ -12,8 +12,8 @@ const TrustedPartner = () => {
         culinary talent and service make us a corporate event catering company
         you can always count on.
       </p>
-      <Link to="/events/corporate">
-        <button className="trusted__btn">Let's Talk About Your Idea</button>
+      <Link className="btn" to="/events/corporate">
+        Let's Talk About Your Idea
       </Link>
     </section>
   )
